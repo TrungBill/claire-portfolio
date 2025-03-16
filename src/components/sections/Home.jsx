@@ -12,7 +12,7 @@ export const Home = () => {
                     </p>
                     
                     <div className="flex justify-center space-x-4">
-                    <a href="Experience"
+                    <a href="#experience"
                         className="bg-pink-300 text-white py-3 px-6 rounded font-bold transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(236, 72, 153, 0.4)]"    >
                         Experience
                     </a>
