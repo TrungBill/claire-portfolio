@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 html, body {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   margin: 0;
   padding: 0;
   background: #0a0a0a;
@@ -9,6 +9,20 @@ html, body {
 }
 
 @layer utlities{
+  @keyframes blink {
+    0% {
+     opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    
+  }
+
+  .animate-blink {
+    animation: blink 0.8s step-end infinite;
+  }
+
   @keyframes loading {
     0% {
      transform: translateX(-100%);
