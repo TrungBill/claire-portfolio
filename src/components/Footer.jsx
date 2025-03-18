@@ -23,24 +23,7 @@ export const Footer = () => {
                         >
                             <FaLinkedin size={24} />
                         </a>
-                        <a 
-                            href="https://www.facebook.com/share/1APXrnpZB5/?mibextid=wwXIfr" 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className="text-gray-400 hover:text-pink-500 transition-colors"
-                            aria-label="Facebook"
-                        >
-                            <FaFacebook size={24} />
-                        </a>
-                        <a 
-                            href="https://www.instagram.com/beibeboo.__?igsh=dTc0b256em9jZ2Zs" 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className="text-gray-400 hover:text-pink-500 transition-colors"
-                            aria-label="Instagram"
-                        >
-                            <FaInstagram size={24} />
-                        </a>
+                       
                        
                        
                     </div>

@@ -13,7 +13,7 @@ export const Home = () => {
                     
                     <div className="flex justify-center space-x-4">
                     <a href="#experience"
-                        className="bg-pink-300 text-white py-3 px-6 rounded font-bold transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(236, 72, 153, 0.4)]"    >
+                        className="bg-gradient-to-r from-gray-400 via-pink-500 to-rose-400 text-white py-3 px-6 rounded font-bold transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(236, 72, 153, 0.4)]"    >
                         Experience
                     </a>
 
@@ -21,6 +21,18 @@ export const Home = () => {
                         className="border border-pink-500/50 text-pink-500 py-3 px-6 rounded font-bold transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(236, 72, 153, 0.2)] hover:bg-pink-500/10"    >
                         Contact Me
                     </a>
+
+                    
+                    </div>
+
+                    <div className="mt-6">
+                        <a 
+                            href="/cv.pdf" 
+                            download
+                            className="inline-block bg-gradient-to-r from-gray-400 via-pink-500 to-rose-400 text-white py-3 px-6 rounded font-bold transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(236, 72, 153, 0.4)]"
+                        >
+                            Download CV
+                        </a>
                     </div>
                     
                 </div>

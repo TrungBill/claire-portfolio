@@ -1,9 +1,37 @@
 import { useState } from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
+import emailjs from "emailjs-com";
 
 
 export const Contact = () => {
- 
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    emailjs.sendForm(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      e.target,
+      import.meta.env.VITE_EMAILJS_USER_ID
+    ).then(
+      (result) => {
+        alert("Message Sent, I'll get back to you shortly");
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+        });
+      }
+    ).catch(
+      (err) => {
+        alert("An error occurred, Please try again");
+      }
+    )
+  }
 
   return (
     <section
@@ -16,16 +44,19 @@ export const Contact = () => {
             {" "}
             Contact Me
           </h2>
-          <form className="space-y-6" >
+          <form className="space-y-6" onSubmit={handleSubmit} >
             <div className="relative">
               <input
                 type="text"
                 id="name"
                 name="name"
                 required
-                
+                value={formData.name}
                 placeholder="Name"
                 className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-pink-500 focus:bg-pink-500/5"
+                onChange={(e) =>
+                  setFormData({ ...formData, name: e.target.value })
+                }
                 
                 />
             </div>
@@ -36,9 +67,12 @@ export const Contact = () => {
                 id="email"
                 name="email"
                 required
-              
+                value={formData.email}
                 className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-pink-500 focus:bg-pink-500/5"
                 placeholder="Email"
+                onChange={(e) =>
+                  setFormData({ ...formData, email: e.target.value })
+                }
                
               />
             </div>
@@ -49,9 +83,12 @@ export const Contact = () => {
                 name="message"
                 required
                 rows={5}
-               
+               value={formData.message}
                 className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-pink-500 focus:bg-pink-500/5"
                 placeholder="Your Message..."
+                onChange={(e) =>
+                  setFormData({ ...formData, message: e.target.value })
+                }
                 
               />
             </div>

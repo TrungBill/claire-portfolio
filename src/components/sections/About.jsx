@@ -1,7 +1,7 @@
 import { RevealOnScroll } from "../RevealOnScroll"
 
 export const About = () => {
-    const techStack = ["Python", "SQL", "Excel", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Power BI", "Google Analytics", "Google Data Studio", "Figma", "Microsoft Office", "Jupyter NoteBook"]
+    const techStack = ["Predictive Modeling","Database Mangagement","Risk Analasys","Python", "SQL", "Excel", "Pandas", "NumPy", "Matplotlib","Seaborn","Risk Analysis", "AI Studio", "Power BI", "Google Analytics", "Google Data Studio", "Canva", "Microsoft Office", "Jupyter NoteBook"]
     return(
        
 
@@ -30,8 +30,8 @@ export const About = () => {
                             <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
                                 <h3 className="text-xl font-bold mb-4">Education 📚</h3>
                                 <ul className="list-disc list-inside text-gray-300 space-y-2">
-                                    <li className="text-gray-300"><strong>Bachelor of Business Analytics - Deakin Universiy - Melbourne (2023-Current)</strong></li>
-                                    <li className="text-gray-300"><strong>Thang Long Highschool - Hanoi, Vietnam - (2019-2022)</strong></li>
+                                    <li className="text-gray-300"><strong>Bachelor of Business Analytics - Deakin Universiy - Melbourne - Current WAM: 80 -  (2023-Current)</strong></li>
+                                    <li className="text-gray-300"><strong>Thang Long Highschool - Hanoi, Vietnam - GPA: 9.5/10 - (2019-2022)</strong></li>
                                 
                                 </ul>
                         </div>
