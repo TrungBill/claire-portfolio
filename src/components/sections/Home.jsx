@@ -35,7 +35,7 @@ export const Home = () => {
                     
                     </div>
 
-                    <div className="mt-6">
+                    <div className="mt-8 mb-12">
                         <a 
                             href="/cv2.pdf" 
                             download
