@@ -1,12 +1,69 @@
-# React + Vite
+Claire Nguyen Portfolio
+A personal portfolio website showcasing Claire Nguyen's skills, experience, and projects in Business Analytics.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfolio Preview
 
-Currently, two official plugins are available:
+Overview
+This is a responsive, single-page portfolio website built with modern web technologies. It features a clean, professional design with smooth animations, a contact form, and showcases Claire's academic accomplishments and data analytics projects.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features
+✨ Modern UI with gradient accents and responsive design
+🌙 Dark mode aesthetic with consistent branding
+🔄 Smooth scroll and reveal animations
+📝 Working contact form using EmailJS
+📱 Mobile-friendly navigation with hamburger menu
+📄 Downloadable CV option
+🔗 Links to projects, certificates, and social media
+Tech Stack
+React - Frontend framework
+Vite - Build tool and development server
+Tailwind CSS - Utility-first CSS framework
+EmailJS - Email service for contact form
+React Icons - Icon library
 
-## Expanding the ESLint configuration
+# Clone the repository
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+git clone https://github.com/yourusername/claire-portfolio.git
+
+# Navigate to project directory
+
+cd claire-portfolio
+
+# Install dependencies
+
+npm install
+
+# Run development server
+
+npm run dev
+
+# Build for production
+
+npm run build
+
+# Preview production build
+
+npm run preview
+
+claire-portfolio/
+├── public/ # Static files (PDFs, images)
+├── src/ # Source files
+│ ├── components/ # React components
+│ │ ├── sections/ # Main page sections
+│ │ └── ... # UI components
+│ ├── App.jsx # Main app component
+│ └── main.jsx # Entry point
+└── ... # Configuration files
+
+Deployment
+The site is deployed using [Netlify/Vercel/GitHub Pages]. Visit portfoliourl.com to see it live.
+
+Credits
+Fonts: Inter, Montserrat
+Icons: React Icons (Font Awesome)
+Animations: Custom CSS transitions
+
+License
+MIT
+
+© 2025 Claire Nguyen. All rights reserved.
