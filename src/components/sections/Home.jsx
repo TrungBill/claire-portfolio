@@ -37,7 +37,7 @@ export const Home = () => {
 
                     <div className="mt-8 mb-12">
                         <a 
-                            href="/cv2.pdf" 
+                            href="/newCv.pdf" 
                             download
                             className="inline-block bg-gradient-to-r from-gray-400 via-pink-500 to-rose-400 text-white py-3 px-6 rounded font-bold transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(236, 72, 153, 0.4)]"
                         >
